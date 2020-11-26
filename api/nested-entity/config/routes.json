@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nested-entities",
+      "handler": "nested-entity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nested-entities/count",
+      "handler": "nested-entity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nested-entities/:id",
+      "handler": "nested-entity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nested-entities",
+      "handler": "nested-entity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nested-entities/:id",
+      "handler": "nested-entity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nested-entities/:id",
+      "handler": "nested-entity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

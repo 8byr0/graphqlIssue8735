@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "root_entities",
+  "info": {
+    "name": "rootEntity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nested_entities": {
+      "collection": "nested-entity",
+      "via": "root_entity"
+    }
+  }
+}

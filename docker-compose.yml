@@ -1,0 +1,12 @@
+version: "3"
+services:
+  strapi-db:
+    image: mongo
+    container_name: strapi-db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${API_DB_USER:-strapi}
+      MONGO_INITDB_ROOT_PASSWORD: ${API_DB_PASSWORD:-strapi}
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27019:27017"

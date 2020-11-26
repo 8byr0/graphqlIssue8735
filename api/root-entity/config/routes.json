@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/root-entities",
+      "handler": "root-entity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/root-entities/count",
+      "handler": "root-entity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/root-entities/:id",
+      "handler": "root-entity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/root-entities",
+      "handler": "root-entity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/root-entities/:id",
+      "handler": "root-entity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/root-entities/:id",
+      "handler": "root-entity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
